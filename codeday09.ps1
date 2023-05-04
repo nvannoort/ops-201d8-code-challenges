@@ -11,5 +11,7 @@
  Get-EventLog -LogName System -newest 20
  
  # Print to the screen all sources of the 500 most recent entries in the System event log. Ensure that the full lines are displayed (get rid of the ... and show the entire text).
- Get-WinEvent -LogName 'Application', 'System', 'Security', 'Setup' -MaxEvents 500 
+ Get-WinEvent -LogName 'Application', 'System', 'Security', 'Setup' -MaxEvents 500 | Format-Table -AutoSize -Wrap
+ 
+
  
